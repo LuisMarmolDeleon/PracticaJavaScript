@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="application/vnd.iptc.g2.knowledgeitem+xml">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Seleccion de materia</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-4">
+            <div class="card">
+                <div class="card-header bg-dark text-light"><h5 class="text-center">Formulario de inicio</h5></div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="name" class="col-form-label">Nombre: </label>
+                        <input type="text" class="form-control" id="name" onchange="savedata()">
+                        <label for="name" class="col-form-label" id="error-name"></label>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="province" class="col-form-label">Provincia:</label>
+                        <input type="text" class="form-control" id="province" onchange="savedata()">
+                        <label for="province" class="col-form-label" id="error-province"></label>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="city" class="col-form-label">Ciudad:</label>
+                        <input type="text" class="form-control" id="city" onchange="savedata()">
+                        <label for="city" class="col-form-label" id="error-city"></label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sector" class="col-form-label">Sector:</label>
+                        <input type="text" class="form-control" id="sector" onchange="savedata()">
+                        <label for="sector" class="col-form-label" id="error-sector"></label>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="street" class="col-form-label">Calle:</label>
+                        <input type="text" class="form-control" id="street" onchange="savedata()">
+                        <label for="street" class="col-form-label" id="error-calle"></label>
+                    </div>
+
+                    <div class="md-3">
+                        <label for="career" class="form-label">Carrera:</label>
+                        <select id="career" class="custom-select" onchange="savedata()">
+                            <option value="">Seleccione una opcion</option>
+                            <option value="software">Software</option>
+                            <option value="mecatronica">Mecatronica</option>
+                            <option value="ciberseguridad">Ciberseguridad</option>
+                        </select>
+                        <label for="contact-type" class="form-label" id="error-career"></label>
+                    </div>
+
+                    <button type="button" onclick="init()" class="btn btn-outline-primary float-end" id="ingresar">
+                        Success
+                    </button>
+                    <button type="button" class="btn btn-outline-warning float-end me-2 text-danger" id="limpiar" onclick="limpiar()">
+                        Limpiar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row md-4" id="contact-container">
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/site/formulario/formulario.js"></script>
+</body>
+</html>

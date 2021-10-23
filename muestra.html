@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="application/vnd.iptc.g2.knowledgeitem+xml">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Seleccion de materia</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-4">
+            <div class="card">
+                <div class="card-header bg-dark text-light"><h5 class="text-center">Muestra de seleccion</h5></div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="name" class="col-form-label">Nombre: </label>
+                        <input type="text" class="form-control" id="name" onchange="savedata()" disabled>
+                    </div>
+
+                    <div class="md-3">
+                        <label for="career" class="form-label">Carrera:</label>
+                        <input id="career" class="custom-select" onchange="savedata()" disabled>
+                        </input>
+                    </div>
+                    <button type="button" class="btn btn-success mt-1 mc-" onclick="reset()">Aceptar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <table class="table table-dark mt-4" id="tabla">
+        <thead>
+        <tr>
+            <th scope="col">Materia</th>
+            <th scope="col">Lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miercoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">Viernes</th>
+            <th scope="col">Sabado</th>
+            <th scope="col">Domingo</th>
+        </tr>
+        </thead>
+        <tbody id='table-body-mat'>
+        <tr>
+
+        </tr>
+        </tbody>
+    </table>
+    <div class="row md-4" id="contact-container">
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/site/muestra/muestra.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.input-error {
+    border-color: red;
+    border-width: medium;
+}
+
+.error-text{
+    color: red;
+    font-size: 10px;
+}
+.position{
+    text-align: center;
+    text-shadow: #5a6268;
+    text-decoration-style: solid;
+}
+.contenedor{
+    position: relative;
+    border-radius: 15px;
+    box-sizing: initial;
+}
+
+.links{
+    text-align: center;
+}
+.botonmateria {
+    width: 100%;
+    border-width: 2px;
+    border-color: lightblue;
+    background-color: transparent;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
